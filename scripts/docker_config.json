@@ -1,0 +1,5 @@
+{
+  "DB_DOCKER_CONTAINER": "p2p-database",
+  "DB_DOCKER_IMAGE": "mysql/mysql-server:8.0.29",
+  "NETWORK_NAME": "devtheory-net"
+}

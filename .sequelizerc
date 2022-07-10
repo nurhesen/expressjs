@@ -1,0 +1,14 @@
+'use strict';
+
+const path = require('path');
+const env = require('./src/env');
+
+
+const url = `mysql://${env.DB_USER}:${env.DB_PASSWORD}@${env.DB_HOSTNAME}:${env.DB_PORT}/${env.DB_NAME}`;
+
+
+module.exports = {
+   url,
+  'migrations-path': path.resolve('src', 'migrations'),
+  'models-path':     path.resolve('src', 'models'),
+}
